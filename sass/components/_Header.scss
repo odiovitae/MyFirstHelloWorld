@@ -1,0 +1,92 @@
+.Contacts-List {
+    @include FlexCenter;
+}
+
+.Navigation-Block {
+    @include FlexCenter;
+}
+
+.Navigation {
+    @include FlexCenter;
+    justify-content: space-evenly;
+}
+
+.Navigation-List {
+    @include FlexCenter;
+    margin-left: 93px;
+}
+
+.Logo {
+    display: flex;
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    padding: 24px 0px 25px 0px;
+    span {
+        font-family: "Raleway", sans-serif;
+        &:first-child {
+            color: var(--blue-color);
+        }
+    }
+}
+
+.Contacts-List__Item {
+    color: var(--dark-grey);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    &:first-child {
+        margin-left: 0px;
+    }
+    svg {
+        path {
+            fill: var(--dark-grey);
+        }
+    }
+    span {
+        margin-left: 10px;
+    }
+}
+
+.Navigation-List__Item:hover,
+.Contacts-List__Item:hover span,
+.Contacts-List__Item:hover svg path {
+    color: var(--blue-color);
+    fill: var(--blue-color);
+    cursor: pointer;
+}
+
+.Navigation-List__Item {
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:first-child {
+        margin-left: 0px;
+    }
+    span {
+        padding: 35px 0px;
+    }
+    div {
+        height: 4px;
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 10px;
+    }
+    &:hover {
+        div {
+            display: block;
+            background-color: var(--blue-color);
+        }
+    }
+}

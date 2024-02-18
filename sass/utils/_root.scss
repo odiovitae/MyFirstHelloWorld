@@ -1,0 +1,15 @@
+:root {
+    --white-color: #fff;
+    --blue-color: #2196f3;
+    --black-dark-color: #212121;
+    --dark-grey: #757575;
+    --light-grey: #f5f4fa;
+    --black-transparent: #2f303acc;
+    --black-light-color: #2f303a;
+    --grey-transparent: #ffffff99;
+}
+
+@mixin FlexCenter {
+    display: flex;
+    align-items: center;
+}
